@@ -20,7 +20,7 @@ export class ProgressComponent implements OnInit {
     } else if ( this.progreso < 0 ) {
       this.progreso = 0;
     } else {
-      this.progreso += valor+1;
+      this.progreso += valor;
     }
   }
 
