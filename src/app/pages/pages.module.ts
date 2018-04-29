@@ -8,21 +8,22 @@ import {PagesComponent} from './pages.component';
 // Modulos
 import {SharedModule} from '../shared/shared.module';
 import {PAGES_ROUTES} from './pages.routes';
+import {IncrementadorComponent} from "../components/incrementador/incrementador.component";
 import {FormsModule} from "@angular/forms";
-
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    PagesComponent
+    PagesComponent,
+    IncrementadorComponent
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    PagesComponent,
+    PagesComponent
   ],
   imports: [
     SharedModule,
