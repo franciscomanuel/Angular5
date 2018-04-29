@@ -13,7 +13,7 @@ export class ProgressComponent implements OnInit {
   ngOnInit() {
   }
 
-  cambiarValor(valor) {
+  cambiarValor(valor: number) {
 
     if ( this.progreso > 100 ) {
       this.progreso = 100;
