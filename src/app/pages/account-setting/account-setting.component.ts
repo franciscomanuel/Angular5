@@ -10,7 +10,11 @@ export class AccountSettingComponent implements OnInit {
 
   constructor(public _ajustes: SettingsService) { }
 
+  /*
+    Cuando la página sea cargada es cuando debemos lanzar la función colocarCheck.
+   */
   ngOnInit() {
+    this.colocarCheck();
   }
 
   cambiarTema(tema: string, link: any) {
@@ -26,6 +30,19 @@ export class AccountSettingComponent implements OnInit {
     }
 
     link.classList.add('working');
+  }
+
+  colocarCheck() {
+    let selectores: any = document.getElementsByClassName('selector');
+
+    let tema = this._ajustes.ajustes.tema;
+
+    for(let ref of selectores) {
+      if(ref.getAttribute('data-theme') === tema) {
+        ref.classList.add('working');
+        break;
+      }
+    }
   }
 
 }
