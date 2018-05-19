@@ -7,12 +7,15 @@ import {APP_ROUTES} from './app.routes';
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
+// Component
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
 import { FormsModule } from '@angular/forms';
-import { SettingsService } from './services/settings.service';
+
+// Servicios
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,10 @@ import { SettingsService } from './services/settings.service';
     BrowserModule,
     APP_ROUTES,
     FormsModule,
-    PagesModule
+    PagesModule,
+    ServiceModule
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
