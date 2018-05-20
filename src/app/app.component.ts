@@ -14,4 +14,5 @@ export class AppComponent {
     la aplicación.
    */
   constructor(public _ajustes: SettingsService){}
+
 }

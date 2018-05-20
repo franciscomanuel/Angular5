@@ -17,6 +17,7 @@ import  { ChartsModule } from "ng2-charts";
 // Components
 import { GraficodonaComponent } from "../components/graficodona/graficodona.component";
 import { AccountSettingComponent } from './account-setting/account-setting.component';
+import { PromesasComponent } from './promesas/promesas.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AccountSettingComponent } from './account-setting/account-setting.compo
     PagesComponent,
     IncrementadorComponent,
     GraficodonaComponent,
-    AccountSettingComponent
+    AccountSettingComponent,
+    PromesasComponent
   ],
   exports: [
     DashboardComponent,
